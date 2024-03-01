@@ -9,7 +9,7 @@
     "ssr-docs": "rimraf docs/dist && vite-pages ssr docs",
     "build-lib": "vite build",
     "predeploy": "npm run ssr-docs",
-    "deploy": "gh-pages -d docs"
+    "deploy": "gh-pages -d docs/dist "
   },
   "dependencies": {
     "react": "^18.2.0",

@@ -1,4 +1,4 @@
-import{j as e,u as l}from"./ssg-client-BmLokDDY.js";import{s as d}from"./style.module-cSaCJ2cx.js";import{p as c}from"./README-CmixbLha.js";const u=`import type { MyImportedTypeAlias } from './typesUtils'
+import{j as e,u as l}from"./ssg-client-C2molJpB.js";import{s as d}from"./style.module-cSaCJ2cx.js";import{p as c}from"./README-CmixbLha.js";const u=`import type { MyImportedTypeAlias } from './typesUtils'
 export type { ReExportedInterface } from './typesUtils'
 export type MyExportedTypeAlias = { a: number }
 type MyTypeAlias = { a: number }

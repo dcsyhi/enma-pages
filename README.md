@@ -1,4 +1,4 @@
-# vite-pages library starter
+# enma-pages library starter
 
 This is a demo project for [vite-plugin-react-pages](https://github.com/vitejs/vite-plugin-react-pages).
 This project demonstrate how to develop a library using vite as your local develop environment.
