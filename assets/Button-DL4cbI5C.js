@@ -1,4 +1,4 @@
-import{j as e,u as l}from"./ssg-client-CekhRx9I.js";import{a as d}from"./style.module-C_8RmNkQ.js";import{p as c}from"./README-CmixbLha.js";const u=({className:n,...t})=>e.jsx("button",{...t,className:[d.button,n].filter(Boolean).join(" ")}),y=`import type { MyImportedTypeAlias } from './typesUtils'
+import{j as e,u as l}from"./ssg-client-BP_Pw94m.js";import{a as d}from"./style.module-C_8RmNkQ.js";import{p as c}from"./README-CmixbLha.js";const u=({className:n,...t})=>e.jsx("button",{...t,className:[d.button,n].filter(Boolean).join(" ")}),y=`import type { MyImportedTypeAlias } from './typesUtils'
 export type { ReExportedInterface } from './typesUtils'
 export type MyExportedTypeAlias = { a: number }
 type MyTypeAlias = { a: number }
