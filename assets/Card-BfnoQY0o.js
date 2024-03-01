@@ -1,4 +1,4 @@
-import{j as e,u as s}from"./ssg-client-CVpF4B7N.js";import{a as i}from"./style.module-cSaCJ2cx.js";import{p as m}from"./README-ja20PUz3.js";const d=({className:t,...o})=>e.jsx("div",{...o,className:[i.card,t].filter(Boolean).join(" ")}),a=()=>e.jsx(d,{children:"demo1"}),l=`
+import{j as e,u as s}from"./ssg-client-CekhRx9I.js";import{s as i}from"./style.module-C_8RmNkQ.js";import{p as m}from"./README-ja20PUz3.js";const d=({className:t,...o})=>e.jsx("div",{...o,className:[i.card,t].filter(Boolean).join(" ")}),a=()=>e.jsx(d,{children:"demo1"}),l=`
 
 import React from 'react'
 import { Card } from 'my-lib'
