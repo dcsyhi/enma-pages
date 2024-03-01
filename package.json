@@ -1,0 +1,32 @@
+{
+  "name": "my-lib",
+  "description": "suppose this npm package name is 'my-lib'",
+  "private": true,
+  "version": "0.0.3",
+  "scripts": {
+    "dev": "vite serve docs",
+    "build-docs": "rimraf docs/dist && vite build docs",
+    "ssr-docs": "rimraf docs/dist && vite-pages ssr docs",
+    "build-lib": "vite build",
+    "predeploy": "npm run ssr-docs",
+    "deploy": "gh-pages -d docs"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.3"
+  },
+  "devDependencies": {
+    "@mdx-js/react": "^3.0.0",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.11.5",
+    "@types/react": "^18.2.48",
+    "@vitejs/plugin-react": "^4.2.1",
+    "gh-pages": "^6.1.1",
+    "rimraf": "^5.0.5",
+    "serve": "^14.2.1",
+    "vite": "^5.0.12",
+    "vite-pages-theme-doc": "^5.0.0",
+    "vite-plugin-react-pages": "^5.0.0"
+  }
+}
