@@ -1,0 +1,558 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><title>リアリティ・フラクチャー｜シールド戦略レビュー 2026.09.20</title><meta name="description" content="全公開後のFRAシールド事前分析。構築、重要カード、10色組、色マナ、プレイとBO3を解説。全カード個別採点表ではありません。"><style>
+:root{--ink:#172636;--muted:#5d6d7d;--accent:#5652a2;--paper:#f4f5f8;--line:#dfe3eb;--tint:#eeedf7}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:22px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;font-size:16px;line-height:1.9;word-break:normal;overflow-wrap:anywhere;-webkit-text-size-adjust:100%}
+.hero{background:#19283c;color:#fff;padding:48px max(24px,calc((100vw - 1090px)/2)) 42px;border-bottom:5px solid #8b83ca}
+.hero .kicker{font-size:12px;letter-spacing:.2em;color:#c3c7e9;margin:0 0 15px;font-weight:650}
+.hero h1{font-size:clamp(29px,4vw,43px);line-height:1.45;letter-spacing:.015em;margin:0 0 13px}.hero h1 span{display:block;font-size:clamp(18px,2.4vw,27px);font-weight:500;margin-top:8px;color:#d9e1ed}
+.hero p{margin:12px 0;color:#d6dfeb;font-size:14px}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:23px}.badges span{border:1px solid #64758b;padding:3px 10px;border-radius:4px;font-size:12px}
+.layout{max-width:1160px;padding:32px 28px 56px;margin:auto;display:grid;grid-template-columns:220px minmax(0,1fr);gap:30px;align-items:start}
+aside{position:sticky;top:20px;max-height:calc(100vh - 40px);overflow:auto;font-size:12px;line-height:1.65}aside .label{font-size:11px;font-weight:750;letter-spacing:.15em;color:var(--muted);margin:0 0 11px}nav a{display:block;padding:7px 10px;border-left:2px solid var(--line);text-decoration:none;color:#44546b}nav a:hover{border-color:var(--accent);background:#e8e8f3;color:var(--accent)}
+main{min-width:0;background:#fff;border:1px solid var(--line);border-radius:10px;padding:32px 34px;box-shadow:0 8px 30px #18283b08}
+h2{font-size:24px;line-height:1.55;margin:49px 0 20px;padding-top:15px;border-top:2px solid #dfe3ed;color:#23374f}h2:first-of-type{margin-top:35px}h3{font-size:18px;line-height:1.65;margin:29px 0 11px;color:#3e4684}p{margin:0 0 18px}strong{font-weight:720}blockquote{margin:0 0 28px;padding:23px 24px;background:var(--tint);border-left:4px solid var(--accent);border-radius:0 8px 8px 0}blockquote p{margin:0;font-size:17px}
+a{color:#4546a2;text-underline-offset:.2em}a:focus-visible,button:focus-visible,.table-scroll:focus-visible{outline:3px solid #bb9a4b;outline-offset:3px}.ref{font-size:10px;text-decoration:none;margin-left:3px;white-space:nowrap;color:#635bab;vertical-align:super}
+.table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:7px;margin:20px 0 25px}table{border-collapse:collapse;width:100%;font-size:13px;line-height:1.8}th,td{padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}thead th{background:#eef0f6;font-size:12px;color:#394e68;white-space:nowrap}tbody tr:nth-child(even){background:#fafbfc}tbody tr:last-child td{border-bottom:0}td:first-child{font-weight:620;min-width:145px}table:has(th:nth-child(3)){min-width:595px}table:has(th:nth-child(4)){min-width:690px}code{background:#f0f2f7;border-radius:4px;padding:2px 5px;font-size:.9em;white-space:normal}ul,ol{padding-left:1.6em;margin:12px 0 23px}li{padding:4px 0}li.source{font-size:12px;line-height:1.7;border-bottom:1px solid #eceef4;padding:8px 0;scroll-margin-top:30px}.source:target{background:#faf1d9}button{font:inherit;font-size:12px;color:#dbe4f0;background:transparent;border:1px solid #718197;padding:6px 12px;border-radius:5px;cursor:pointer;margin-top:9px}.footer{max-width:1160px;margin:auto;padding:0 28px 36px;font-size:12px;color:var(--muted)}
+@media(max-width:1000px){.layout{grid-template-columns:1fr;gap:18px}aside{position:static;max-height:none}aside nav{display:flex;gap:8px;overflow:auto;white-space:nowrap;padding-bottom:8px}nav a{border:1px solid var(--line);border-radius:4px;padding:7px 10px;font-size:11px}aside .label{margin-bottom:7px}main{padding:27px 28px}}
+@media(max-width:580px){body{font-size:15px}.hero{padding:31px 20px 29px}.layout{padding:21px 14px 32px}main{padding:23px 19px}h2{font-size:21px;margin-top:36px}h3{font-size:17px}blockquote{padding:18px 17px}blockquote p{font-size:16px}.footer{padding-left:20px;padding-right:20px}}
+@media print{body{background:#fff;font-size:10.5pt;line-height:1.65}.hero{background:#fff;color:#172636;padding:0 0 20px;border-bottom:2px solid #555}.hero h1{font-size:25pt}.hero h1 span,.hero p,.hero .kicker{color:#354456}.hero h1 span{font-size:16pt}.badges span{border-color:#aaa}button,aside{display:none}.layout{display:block;padding:0;max-width:none}main{border:0;box-shadow:none;padding:15px 0;border-radius:0}h2{font-size:17pt;break-after:avoid;margin-top:25px}h3{font-size:12pt;break-after:avoid}table{font-size:8.5pt}.table-scroll{overflow:visible}table:has(th:nth-child(3)),table:has(th:nth-child(4)){min-width:0}td:first-child{min-width:0}tr{break-inside:avoid}th,td{padding:7px 8px}thead{display:table-header-group}.footer{padding:12px 0}blockquote{break-inside:avoid}@page{size:A4;margin:16mm}}
+</style></head><body><header class="hero"><p class="kicker">REALITY FRACTURE · SEALED STRATEGY</p><h1>リアリティ・フラクチャー<span>全公開後のシールド戦略レビュー</span></h1><p>盤面・回答・継戦・マナから、開封したプールの勝ち筋を選ぶ。</p><div class="badges"><span>2026.09.20</span><span>6パック／40枚／BO3</span><span>テキストによる事前評価</span><span>注目札の選抜レビュー</span></div><button onclick="window.print()" type="button">印刷</button></header><div class="layout"><aside><p class="label">CONTENTS</p><nav aria-label="目次"><a href="#section-1">01｜前回から何を変えるか</a><a href="#section-2">02｜環境を読むための4つの軸</a><a href="#section-3">03｜各色を採用する理由</a><a href="#section-4">04｜基盤にしたいカードを役割で見る</a><a href="#section-5">05｜除去は「枚数」ではなく「回答範囲」で数える</a><a href="#section-6">06｜10色組の採用条件</a><a href="#section-7">07｜ボムを見る順番</a><a href="#section-8">08｜40枚へ落とし込む</a><a href="#section-9">09｜3色目は「出るつもり」ではなく確率で考える</a><a href="#section-10">10｜再現しやすい強い動き</a><a href="#section-11">11｜プレイで落としたくないポイント</a><a href="#section-12">12｜BO3で取り返す</a><a href="#section-13">13｜開封後の意思決定手順</a><a href="#section-14">最終チェック</a><a href="#section-15">出典・確認対象</a></nav></aside><main>
+
+
+<blockquote>
+<p><strong>結論：盤面を作りながら資源を増やせる2色デッキを基準にする。</strong> まず白青・青黒を比較候補に加え、緑白・赤緑の従来候補と実際の低マナ域・除去・勝ち筋を比べる。色の評判より、「序盤に負けない」「相手のボムを処理できる」「引き続き有効な行動を取れる」の3条件を優先する。</p>
+</blockquote>
+<h3>この分析の範囲</h3>
+<p>9月19日の日本語公開報道では、公式ギャラリーで全カードが公開されたことを確認できる。公式リリースノートも9月18日付で公開されている。プレリリース開始は9月25日、Arena実装は9月29日、製品発売は10月2日。今回はArena実装前のテキスト評価であり、実戦勝率に基づく環境順位ではない。<a class="ref" href="#source-1">[1]</a><a class="ref" href="#source-2">[2]</a><a class="ref" href="#source-3">[3]</a></p>
+<p>本書は、全カード公開後に公式の封入構成・ルール・アーキタイプと主要な実用札を確認した<strong>戦略レビュー</strong>である。全収録カードを1枚ずつ採点した完全評価表や、全カードの機械的な照合・集計を完了した版ではない。未確認の和名を作らず、カード名は主に英名を用いる。</p>
+<p>既定条件はプレイ・ブースター6パックの通常シールド。プレリリースの場合は使用可能なプロモも加える。FRCの統率者製品専用カードは混ぜない。SPGは、そのイベントで開封して使用可能なものだけを評価する。<a class="ref" href="#source-3">[3]</a><a class="ref" href="#source-4">[4]</a></p>
+<h2 id="section-1">01｜前回から何を変えるか</h2>
+<p>9月13日版はレア・神話47枚、コモン・アンコモン38枚の選抜評価で、構築の検討順は主に白青・緑白・赤緑だった。今回はその評価を出発点にしつつ、以下を修正する。</p>
+<div aria-label="横スクロール対応の表" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>今回の判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>青</td>
+<td>引き続き有力。飛行だけでなく、盤面とジェイス資源を同時に用意するカードを重く見る。</td>
+</tr>
+<tr>
+<td>黒</td>
+<td>「墓地シナジーが揃った場合だけの色」にしない。サイズに依存しない追放除去や、相手の最大マナ総量を狙う除去が、シールドのボム対策になる。</td>
+</tr>
+<tr>
+<td>赤</td>
+<td>ボムと単体火力だけで評価しない。複数の生物を残すカードや、軽量の準備生物から伸ばす構築も検討する。</td>
+</tr>
+<tr>
+<td>緑・白</td>
+<td>有力評価は維持。ただし「緑白から決め打ちする」という使い方は避ける。回復とその報酬、加速とその使い道を実プールで照合する。</td>
+</tr>
+<tr>
+<td>色組</td>
+<td>白青・青黒を最初の比較候補として意識する。黒緑・白黒も、除去と継戦札が厚ければ十分に選ぶ。これは勝率順位ではない。</td>
+</tr>
+</tbody>
+</table></div>
+<p>黒の見直しを最も分かりやすく示すのは <strong>Extended Absence</strong>。4マナ・インスタントのクリーチャー／PW追放除去であり、相手の大きさに左右されない。単色シンボルなのも使いやすい。相手の強いカードを倒したうえで勝つ構築に向く。<a class="ref" href="#source-5">[5]</a></p>
+<h2 id="section-2">02｜環境を読むための4つの軸</h2>
+<h3>盤面の強さと長期戦の強さを切り離さない</h3>
+<p>ジェイス付与は、守れればドローや諜報につながる資源を作る。一方、守るための生物が足りなければ、その忠誠度は相手の攻撃で失われる。準備も追加の行動を与えるが、実際に唱えるためのマナとタイミングが必要になる。<a class="ref" href="#source-2">[2]</a><a class="ref" href="#source-6">[6]</a></p>
+<p>したがって私の構築上の仮説は、<strong>「後で得をするカード」だけを積むより、「今の盤面にも参加し、後でも役に立つカード」を優先する</strong>こと。単純な低速環境とは断定しない。盤面を放棄した相手を先に攻める構築も成立する。</p>
+<h3>混成カードを「その2色専用」にしない</h3>
+<p><strong>Fatehold Chronologist</strong> は白だけでも青だけでも本体と準備呪文を使える。<strong>Konstrari Improviser</strong> も赤だけ、または緑だけで機能する。<a class="ref" href="#source-7">[7]</a><a class="ref" href="#source-8">[8]</a></p>
+<p>前者は白黒や青黒、後者は赤黒や緑青でも候補になる。開封後、混成カードを通常の多色カードと一緒に脇へ置くと、各色の本当の採用枚数を少なく見積もる。<strong>本体と準備呪文の両方の色拘束を見て、使える各色の候補へ加える</strong>。</p>
+<h3>コモンだけでなく、片割れ枠のアンコモンも基盤</h3>
+<p>公式の通常セット内訳は71C・109U・64R・26Mで、これとは別にコモン2色土地10種と通常枠の基本土地がある。各プレイ・ブースターの片割れ枠は3枚で、そのうち2枚が対応するペア。<a class="ref" href="#source-3">[3]</a></p>
+<p>6パックなら、この専用枠だけで<strong>18枚、そのうち対応するペア6組</strong>が入る計算になる。これは18枚が自分の色に合うという意味ではない。同じペアに属するカードの出現が連動するので、カードをすべて独立に引くモデルでシナジーの再現率を計算しない。</p>
+<h3>準備には「第2のマナカーブ」がある</h3>
+<p>2マナ生物の準備呪文が3マナなら、3ターン目には「次の生物を出す」か「準備呪文を使う」かを選ぶ。本体が軽いだけで、デッキ全体が軽く動くとは限らない。<a class="ref" href="#source-6">[6]</a></p>
+<p>構築時は、生物のマナカーブに加えて、3～5ターン目に使いたい準備・起動能力を別に確認する。マナの使い道が多いことは、安易に土地を減らす根拠ではなく、むしろ土地を引き続けたい理由にもなる。</p>
+<h2 id="section-3">03｜各色を採用する理由</h2>
+<p>以下はカードテキストからの構築判断であり、実戦データによる色順位ではない。</p>
+<div aria-label="横スクロール対応の表" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>色</th>
+<th>シールドで担わせたい役割</th>
+<th>採用を後押しする札・構造</th>
+<th>主な警戒点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>白</td>
+<td>序盤の盤面、飛行への強化、幅広い対処</td>
+<td>Graft Surgeon、Fatehold Chronologist、Memory Trap、Prophesied End</td>
+<td>回復の報酬ばかりで、回復源や盤面が不足する構築。</td>
+</tr>
+<tr>
+<td>青</td>
+<td>飛行と選別、ジェイス資源、テンポ</td>
+<td>Mindseeker Oculus、Fatehold Chronologist、Infinite Coursework、Countersculpt</td>
+<td>バウンスを確定除去と同じ枚数で数えること。地上の守備不足。</td>
+</tr>
+<tr>
+<td>黒</td>
+<td>ボム処理、交換後の立て直し、墓地活用</td>
+<td>Extended Absence、Break Under Pressure、Last Gasp、Rewrite Regrets</td>
+<td>墓地を増やすこと自体を目的にして、戦場へ影響する札を減らすこと。</td>
+</tr>
+<tr>
+<td>赤</td>
+<td>軽中量の干渉、複数体展開、攻撃の継続</td>
+<td>Fulminous Forte、Heartstring Puller、Violent Echoes、混成の魂木生成札</td>
+<td>小型しか倒せない火力と、強い中大型まで倒せる火力の区別。回復される相手への詰め不足。</td>
+</tr>
+<tr>
+<td>緑</td>
+<td>盤面のサイズ、到達、加速、置物対策</td>
+<td>Konstrari Improviser、Compel Brutality、Budding Insurgent、Sureshot Sower</td>
+<td>加速先ばかりで初動がない、または加速ばかりで勝ち札がない構築。</td>
+</tr>
+</tbody>
+</table></div>
+<p>公式の各色の対処札と10色組のテーマも参照した。具体的な採用判断は、下記のカードと実際のプールの組み合わせで行う。<a class="ref" href="#source-4">[4]</a><a class="ref" href="#source-5">[5]</a><a class="ref" href="#source-7">[7]</a><a class="ref" href="#source-8">[8]</a><a class="ref" href="#source-9">[9]</a><a class="ref" href="#source-10">[10]</a><a class="ref" href="#source-11">[11]</a></p>
+<h2 id="section-4">04｜基盤にしたいカードを役割で見る</h2>
+<p>カードの能力は要約。ここに挙げたことは「必ず何枚も引ける」という意味ではない。</p>
+<div aria-label="横スクロール対応の表" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>カード／コスト</th>
+<th>盤面と役割</th>
+<th>私の採用判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fatehold Chronologist／{1}{W/U}</td>
+<td>2マナの飛行生物。後で準備呪文にマナを回せる。</td>
+<td>序盤と後半の役割を両立。白青以外でも白または青があれば候補。<a class="ref" href="#source-7">[7]</a></td>
+</tr>
+<tr>
+<td>Graft Surgeon／{2}{W}</td>
+<td>カウンター込みで3/3となり、死亡時にはカウンターを移せる。</td>
+<td>地上の交換を損にしにくい。別の生物、特に飛行を残して運用したい。<a class="ref" href="#source-9">[9]</a></td>
+</tr>
+<tr>
+<td>Mindseeker Oculus／{2}{U}</td>
+<td>2/1とジェイス付与4。</td>
+<td>手札補充だけに1ターンを使わず、盤面へ生物も置く。低タフネスへの一掃には注意。<a class="ref" href="#source-10">[10]</a></td>
+</tr>
+<tr>
+<td>Heartstring Puller／{3}{R}</td>
+<td>3/1本体に2/2トークンが付く。</td>
+<td>赤の生物枚数と横展開を支える。単体の大型1体とは異なる仕事をする。<a class="ref" href="#source-11">[11]</a></td>
+</tr>
+<tr>
+<td>Konstrari Improviser／{1}{R/G}</td>
+<td>2/2本体を出してから、準備呪文で魂木を作れる。</td>
+<td>加速だけのカードより序盤に参加しやすい。後述の4ターン目5マナを作る候補。<a class="ref" href="#source-8">[8]</a></td>
+</tr>
+<tr>
+<td>Budding Insurgent／{2}{G}</td>
+<td>3/3警戒として戦い、必要なら置物を処理する。</td>
+<td>メインデッキに自然に置物対策を確保できる。除去オーラやエンチャントへの対処を忘れない。<a class="ref" href="#source-21">[21]</a></td>
+</tr>
+<tr>
+<td>Sureshot Sower／{1}{G}</td>
+<td>到達の軽量生物としても、手札から飛行対策としても使える。</td>
+<td>役割の柔軟さを評価。地上に出した後は、手札から使う対処としては残らない。<a class="ref" href="#source-22">[22]</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>同じ3マナでも、単にドローするカードと、生物を残しながら将来のドローも用意するカードでは、相手の攻撃への耐性が違う。</strong> ただし小型生物を過大評価して、相手の3/4や飛行を止められない構築にならないようにする。</p>
+<h2 id="section-5">05｜除去は「枚数」ではなく「回答範囲」で数える</h2>
+<div aria-label="横スクロール対応の表" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>カード／コスト</th>
+<th>評価したい点</th>
+<th>構築・対戦上の注意</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Extended Absence／{3}{B}</td>
+<td>サイズに関係なく、クリーチャー／PWを追放。</td>
+<td>広い回答として最優先級。相手の小型だけに使い切らない。<a class="ref" href="#source-5">[5]</a></td>
+</tr>
+<tr>
+<td>Fulminous Forte／{2}{R}</td>
+<td>対クリーチャー／PWの5点と、相手側だけへの小型一掃を選べる。</td>
+<td>5点圏外の大型も別に想定する。横並び相手に一掃モードを忘れない。<a class="ref" href="#source-13">[13]</a></td>
+</tr>
+<tr>
+<td>Break Under Pressure／{2}{B}</td>
+<td>相手の最大マナ総量を狙う生け贄。</td>
+<td>最大が複数なら相手に選択がある。小さなジェイスが必ず身代わりになるわけではない。<a class="ref" href="#source-2">[2]</a></td>
+</tr>
+<tr>
+<td>Compel Brutality／{1}{G}</td>
+<td>自軍の生物のパワー、またはPWの忠誠度を使って対処。</td>
+<td>こちらの盤面に依存する。ジェイスを減らす前に使う順番を検討。<a class="ref" href="#source-2">[2]</a></td>
+</tr>
+<tr>
+<td>Prophesied End／{1}{W}</td>
+<td>軽量で、生物のサイズを問わない。</td>
+<td>非攻撃生物を倒すと相手に補償がある。攻撃を待つ余裕と、今すぐ倒す必要を比較。<a class="ref" href="#source-12">[12]</a></td>
+</tr>
+<tr>
+<td>Memory Trap／{2}{W}</td>
+<td>非土地パーマネントへの幅広い対処。</td>
+<td>エンチャントを処理されると戻る。一度対処できたことと永久に無力化したことは別。<a class="ref" href="#source-12">[12]</a></td>
+</tr>
+<tr>
+<td>Infinite Coursework／{2}{U}</td>
+<td>行動を止めるだけでなく、能力や準備へも干渉。</td>
+<td>オーラを割られるリスクは残る。普通の攻撃制限だけのオーラと同一視しない。<a class="ref" href="#source-12">[12]</a></td>
+</tr>
+<tr>
+<td>Last Gasp／{1}{B}</td>
+<td>軽量のマイナス修整。</td>
+<td>カウンターで育った生物や大型まで、これだけで処理できるとは数えない。<a class="ref" href="#source-12">[12]</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>私なら、まず<strong>干渉札4～6枚を目標</strong>に、そのうち「大きな勝ち札まで止められる回答」が2枚程度あるかを見る。これは絶対的な採用ノルマではない。バウンス・手札破壊・打ち消し・色限定除去をすべて無条件の確定除去として合算しない。</p>
+<h3>対青カードは、相手のデッキ色だけで切らない</h3>
+<p>Refute Destiny（{1}{W}）とTerminal Criticism（{1}{B}）は、青を含む対象へ対処できる。通常のジェイス・トークンは青なので、相手が青の呪文を使っていなくても対象が発生し得る。<a class="ref" href="#source-6">[6]</a><a class="ref" href="#source-18">[18]</a><a class="ref" href="#source-19">[19]</a></p>
+<p>ただし、<strong>相手が必ずジェイスを生成するわけではないし、忠誠度1のトークンを倒すために手札1枚を使う価値が常にあるわけでもない</strong>。メイン採用の検討余地はあるが、万能除去としての評価はしない。対戦後に相手の生成量と重要度を見て入れ替える。</p>
+<h2 id="section-6">06｜10色組の採用条件</h2>
+<p>公式のテーマは構築の案内であり、同じ色ならそのテーマへ全振りする義務はない。下の「採用条件」「避けたい形」はシールド用の私の判断。<a class="ref" href="#source-4">[4]</a></p>
+<div aria-label="横スクロール対応の表" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>色組／公式の軸</th>
+<th>選びたいプール</th>
+<th>避けたい形</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>白青／諜報アグロ</td>
+<td>軽量生物・飛行・占術／諜報の自然な連動があり、除去も確保できる。最初の比較候補。</td>
+<td>選別とドローばかりで、攻撃・防御する生物が少ない。</td>
+</tr>
+<tr>
+<td>青黒／墓地の枚数</td>
+<td>黒の除去を青の盤面・飛行・手札補充で支えられる。最初の比較候補。</td>
+<td>スレッショルド達成前に弱いカードばかり。自分を削るだけで盤面を失う。</td>
+</tr>
+<tr>
+<td>黒赤／非戦闘ダメージ</td>
+<td>継続して条件を満たす札と報酬、優秀な除去がある。単純な除去ミッドレンジも検討。</td>
+<td>1点を与えるだけのカードを増やして、十分な生物や報酬がない。</td>
+</tr>
+<tr>
+<td>赤緑／魂木ランプ</td>
+<td>実際に序盤から使える加速と、5～7マナの明確な強みがある。</td>
+<td>「大型が強い」だけで選び、2～3ターン目を空ける。</td>
+</tr>
+<tr>
+<td>緑白／回復・カウンター</td>
+<td>回復源と成長する生物が揃い、飛行などへ強化を回せる。</td>
+<td>回復の報酬しかない、またはライフだけ増えて盤面が強くならない。</td>
+</tr>
+<tr>
+<td>白黒／消耗戦</td>
+<td>序盤の交換、除去、死亡・回収の利益が自然に噛み合う。</td>
+<td>小型を消費すること自体が目的になり、相手の継戦力に負ける。</td>
+</tr>
+<tr>
+<td>青赤／非クリーチャー呪文</td>
+<td>軽い干渉と、呪文を使う利益を生む生物が両方ある。</td>
+<td>呪文枚数を増やすために生物を削りすぎる。</td>
+</tr>
+<tr>
+<td>黒緑／生物の価値</td>
+<td>サイズ・除去・墓地からの再利用が揃う。派手な連動なしでも比較できる。</td>
+<td>地上を固めるだけで、飛行や継続的なジェイス資源に触れない。</td>
+</tr>
+<tr>
+<td>赤白／横並び・強化</td>
+<td>序盤の生物枚数、複数体展開、強化や押し込みが揃う。</td>
+<td>展開が遅く、横に広げても攻撃できない。</td>
+</tr>
+<tr>
+<td>緑青／ジェイス活用</td>
+<td>PWを守る生物と、忠誠度・マナの有効な使い道がある。</td>
+<td>資源は豊富でも、相手の危険な生物を処理する手段がない。</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>構築の結論は「色名」ではなく「このプールで必要な役割が揃うか」で出す。</strong> 白青の低マナ域が足りないのに、色への先入観で良質な赤黒を捨てるのは逆効果。</p>
+<h2 id="section-7">07｜ボムを見る順番</h2>
+<p>以下は「その色に入る理由」として検討する代表例で、網羅的な順位表ではない。<a class="ref" href="#source-2">[2]</a><a class="ref" href="#source-4">[4]</a><a class="ref" href="#source-12">[12]</a></p>
+<div aria-label="横スクロール対応の表" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>カード／コスト</th>
+<th>採用を検討する理由</th>
+<th>支払うべき構築コスト</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Theorist, Jace Beleren／{2}{U}{U}</td>
+<td>継続的な手札差と盤面への働きがある。</td>
+<td>青を安定して出し、PWを守る盤面を作る。</td>
+</tr>
+<tr>
+<td>Chandra, Torch of Defiance／{2}{R}{R}</td>
+<td>複数の役割を持つ4マナ域。</td>
+<td>赤のダブルシンボル。軽率なタッチでは扱わない。</td>
+</tr>
+<tr>
+<td>Draconic Visitor／{3}{R}{R}</td>
+<td>飛行の勝ち札。アーティファクト・トークン生成との上限が高い。</td>
+<td>先に必要なマナを確保する。置き換えで作ったドラゴンは魂木のマナ能力を持たない。<a class="ref" href="#source-16">[16]</a></td>
+</tr>
+<tr>
+<td>Aerid Konstrari／{1}{R}{G}{G}</td>
+<td>比較的軽い飛行の大型で、魂木ともつながる。</td>
+<td>4マナだから簡単に唱えられるとは限らない。赤・緑緑を支える。</td>
+</tr>
+<tr>
+<td>Overwrite the Multiverse／{4}{B}{B}</td>
+<td>不利な生物盤面をリセットする切り札。</td>
+<td>自分も巻き込む。後続と、リセットする前に生き残る手段が必要。</td>
+</tr>
+<tr>
+<td>Verdant Kraken／{4}{G}{G}{G}</td>
+<td>定着後に盤面が継続して大きくなる。</td>
+<td>7マナ・緑3点。序盤の不足を埋めるカードではない。<a class="ref" href="#source-17">[17]</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>「着地すれば強い」は採用判断の半分だけ。</strong> そのカードを引かないゲーム、唱えられないゲーム、除去されたゲームでも戦えるかを確認する。Emrakul, the Exigent Doomのような非常に重いカードも、名前の強さではなく実際の到達可能性で評価する。</p>
+<h2 id="section-8">08｜40枚へ落とし込む</h2>
+<p>以下は私が比較の出発点にするひな型。カードプールに合わせて変える。</p>
+<div aria-label="横スクロール対応の表" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>役割</th>
+<th style="text-align:right">枚数の例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1～2マナの生物枠</td>
+<td style="text-align:right">6</td>
+</tr>
+<tr>
+<td>3マナの生物枠</td>
+<td style="text-align:right">5</td>
+</tr>
+<tr>
+<td>4マナの生物枠</td>
+<td style="text-align:right">3</td>
+</tr>
+<tr>
+<td>5マナの生物枠</td>
+<td style="text-align:right">1</td>
+</tr>
+<tr>
+<td>6マナ以上の生物枠</td>
+<td style="text-align:right">1</td>
+</tr>
+<tr>
+<td>除去・干渉</td>
+<td style="text-align:right">4</td>
+</tr>
+<tr>
+<td>追加の継戦・選別枠</td>
+<td style="text-align:right">2</td>
+</tr>
+<tr>
+<td>保護・強化枠</td>
+<td style="text-align:right">1</td>
+</tr>
+<tr>
+<td>土地</td>
+<td style="text-align:right">17</td>
+</tr>
+<tr>
+<td><strong>合計</strong></td>
+<td style="text-align:right"><strong>40</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>「生物枠」には、生物を出すことを主目的に採用するトークン生成呪文も含めて考えてよい。ただし二重に数えない。準備呪文もデッキ内の別の1枚としては数えない。</p>
+<p>これは17土地を基準にした中速型の例。加速型は終盤の枠を増やせるが、初動を削ってよいわけではない。16土地に落とすなら、十分に軽い構成である理由が必要。準備の追加コストが多い構築では、17～18土地も比較する。公式も17土地を基本のひな型として示している。<a class="ref" href="#source-4">[4]</a></p>
+<h3>初手・マリガン</h3>
+<p>まず「最初の3ターンで何を出すか」を具体的に言えるかを見る。土地が2枚でも色が合わず、3枚目を引いても行動できない手札は危険。反対に、必要な色と2～3マナ域が揃っている手札を、レアがないという理由だけで捨てない。</p>
+<p>土地の総数だけでなく、タップイン、準備呪文の色拘束、2ターン目までに使いたいカードを確認する。基本土地サイクリングも、必要な2マナとそのターンの展開を消費する。</p>
+<h2 id="section-9">09｜3色目は「出るつもり」ではなく確率で考える</h2>
+<p>次は独自の超幾何分布による計算。40枚のデッキから12枚を見た時点で、指定色を出す土地を少なくとも1枚見ている確率を示す。先手6ターン目の通常ドローまでに相当する。マリガン、諜報、追加ドロー、サーチ、タップイン、必要な総マナは考慮しない。</p>
+<div aria-label="横スクロール対応の表" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th style="text-align:right">その色を出す土地の枚数</th>
+<th style="text-align:right">12枚の中に1枚以上ある確率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">1</td>
+<td style="text-align:right">30.0%</td>
+</tr>
+<tr>
+<td style="text-align:right">2</td>
+<td style="text-align:right">51.5%</td>
+</tr>
+<tr>
+<td style="text-align:right">3</td>
+<td style="text-align:right">66.8%</td>
+</tr>
+<tr>
+<td style="text-align:right">4</td>
+<td style="text-align:right">77.6%</td>
+</tr>
+<tr>
+<td style="text-align:right">5</td>
+<td style="text-align:right">85.1%</td>
+</tr>
+</tbody>
+</table></div>
+<p>計算式は <code>1 − C(40−S, 12) / C(40, 12)</code>。Sは指定色を出す土地の枚数。これは<strong>呪文を唱えられる確率ではない</strong>。総マナも必要で、タップインならそのターンは使えない場合がある。</p>
+<p>タッチをするのは、終盤に引いても強く、基本的に色シンボル1つで使え、既存のマナ基盤を大きく壊さずに足せるカードを中心にする。「土地を1枚入れれば、そのレアは使える」ではない。</p>
+<p>公式の土地枠の確率から、6パックの土地枠に含まれるコモン2色土地の期待枚数は約3.27枚。ただし、全部が自分の色と噛み合うわけではない。<a class="ref" href="#source-3">[3]</a></p>
+<p><strong>魂木が出すのは赤か緑。</strong> 青・白・黒のタッチを魂木で解決できるとは数えない。<a class="ref" href="#source-6">[6]</a></p>
+<h2 id="section-10">10｜再現しやすい強い動き</h2>
+<h3>A．白・青のどちらでも使える、盤面を作る準備</h3>
+<p>2ターン目にFatehold Chronologistを出し、3ターン目にその準備呪文を使う。生物を増やしながら次のドローを整えられる。<a class="ref" href="#source-7">[7]</a></p>
+<p>ただし、手札にさらに強い3マナ生物があるなら、そちらを先に出すこともある。準備は「使えるようになったら即使用」ではなく、<strong>そのターンに必要な盤面と手札の展開を比較する選択肢</strong>。</p>
+<h3>B．軽い回復を、盤面の強化へ変える</h3>
+<p>1ターン目Emergency Phytomedic、2ターン目Unflinching Hortimancer。3ターン目に前者の準備呪文Seed Sutureを後者へ使うと、直接置くカウンターと、1点回復による誘発の両方が働く。<a class="ref" href="#source-2">[2]</a><a class="ref" href="#source-20">[20]</a></p>
+<p>妨害がなければ、Hortimancerは元の2/1から4/3になる。この例では、1マナの生物が単なる弱い小型ではなく、後続を育てる役割を持つ。回復の報酬がないプールでは、同じ評価を自動的に与えない。</p>
+<h3>C．序盤の生物を残しながら、4ターン目5マナへ</h3>
+<p>2ターン目Konstrari Improviser、3ターン目に準備呪文で魂木を作る。土地を毎ターン置けていれば、4ターン目は土地4枚＋魂木で5マナへ到達する。<a class="ref" href="#source-8">[8]</a></p>
+<p>重要なのは、5マナで何をするかまで構築時に決めること。手札が軽い札ばかりなら、3ターン目は別の生物を展開する方が強い場合がある。</p>
+<h3>D．ジェイスを使う順番で除去の強さを変える</h3>
+<p>忠誠度を利用するCompel Brutalityを使うなら、ジェイスのドロー能力で忠誠度を減らす前の方が大きな対象を処理できる場合がある。<a class="ref" href="#source-2">[2]</a></p>
+<p>これは「いつも除去を先に使う」という意味ではない。先に引いたカードによって判断を変えたい局面もある。<strong>今の手札で確実に必要な対処があるときは、忠誠度を使う順番を先に計算する</strong>。</p>
+<h2 id="section-11">11｜プレイで落としたくないポイント</h2>
+<h3>ジェイスを殴るか、本体を殴るか</h3>
+<p>次の相手ターンに引かれる1枚、諜報で整えられるドロー、それによって相手の強化が誘発するかを見て判断する。ただし、本体へ通せば勝てる攻撃をジェイスへ回すのは本末転倒。</p>
+<p>私の基本は「相手に追加の有効牌を引かせ続けると負ける盤面なら、継続的な攻撃経路を作る」。一方、相手がジェイスを守るために攻撃を止めていても、こちらが先に致死打点を作れるなら本体への圧力を優先する。</p>
+<h3>ジェイス付与を、いつでも即ドローできる資源と考えない</h3>
+<p>自分のメイン・フェイズでスタックが空なら、新しく作ったジェイスの忠誠度能力をそのターンに使える。一方、同じジェイスで既に能力を使っていれば、後から忠誠度を足しても通常はそのターンにもう一度使えない。<a class="ref" href="#source-2">[2]</a><a class="ref" href="#source-6">[6]</a></p>
+<p>Mindseeker Oculusも、場に出せばどんな状況でも即座にドローできるわけではない。既存のジェイスの使用状況と、自分のメイン・フェイズかを確認する。<a class="ref" href="#source-10">[10]</a></p>
+<h3>準備の本体を倒すタイミング</h3>
+<p>本体が戦場を離れると、その本体が保持していた未使用の準備を失う。しかし、<strong>準備呪文が既に唱えられてスタックにあるなら、本体を倒しただけでは、その呪文まで止まらない</strong>。<a class="ref" href="#source-6">[6]</a></p>
+<p>また、本体が着地した直後、常に相手より先に除去を撃てるわけではない。優先権と、相手がその場で準備呪文を唱えるマナを残しているかを考える。特にインスタントの準備呪文を持つ場合は、除去に対応して唱えられる可能性がある。</p>
+<h3>墓地のカード枚数を水増ししない</h3>
+<p>準備呪文はコピーであり、実際のカードが墓地へ1枚追加されるものとしてスレッショルドを数えない。ジェイス・トークンが死亡しても、それが墓地のカード1枚として残るわけではない。<a class="ref" href="#source-2">[2]</a><a class="ref" href="#source-6">[6]</a></p>
+<h3>派手なレアにも自分側の不利益がある</h3>
+<p>Karn, Argent Defenderは自分の戦場に出たときの能力も妨げる。ジェイス付与などの誘発型能力を多く使うデッキでは、自分の動きを止める危険がある。なお、「準備済状態で戦場に出る」といった置換的な能力は、戦場に出たときの誘発型能力と同じではない。<a class="ref" href="#source-2">[2]</a></p>
+<h2 id="section-12">12｜BO3で取り返す</h2>
+<p>以下は、相手の実際のカードを見た後の調整案。相手の色だけで決めず、速度と勝ち筋で入れ替える。</p>
+<div aria-label="横スクロール対応の表" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>相手の特徴</th>
+<th>入れたい役割</th>
+<th>減らす候補</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>序盤から攻めてくる</td>
+<td>軽量の盤面、適切な除去、盤面にも寄与する回復</td>
+<td>遅いだけのドロー、重複した重い勝ち札</td>
+</tr>
+<tr>
+<td>大型・加速中心</td>
+<td>大きな対象への確定対処、打ち消し、該当色への対策</td>
+<td>小型しか処理できない札の過剰分</td>
+</tr>
+<tr>
+<td>飛行でジェイスや本体を攻める</td>
+<td>到達、飛行に届く除去、飛行ブロッカー</td>
+<td>地上を固めるだけで仕事をしない生物</td>
+</tr>
+<tr>
+<td>継戦型・長期戦</td>
+<td>再利用、継続的な資源、継続して攻撃を通す手段</td>
+<td>効果の薄い一時的強化や、単なるライフ回復</td>
+</tr>
+<tr>
+<td>除去エンチャントや強い置物が多い</td>
+<td>生物枠を兼ねる置物対策</td>
+<td>仕事の少ない最後の1～2枚</td>
+</tr>
+</tbody>
+</table></div>
+<p>先手後手は、まず先手を基準に考える。準備やPW資源があるからといって、自動的に後手を選ぶ理由にはしない。両者の序盤の圧力が低く、追加の初手が重要になる対戦では、対戦後に後手も再検討する。これは環境の先手勝率が確認できたという主張ではない。</p>
+<h2 id="section-13">13｜開封後の意思決定手順</h2>
+<p><strong>まず土地と混成札を確認する。</strong> 使える色の広がりを把握してから、ボム、盤面、除去、継戦札へ分ける。</p>
+<p><strong>次に候補を最低2案、可能なら3案作る。</strong> 「最も強いレアを使う案」「序盤と除去が最も安定する案」「シナジーが最も自然に揃う案」を比較する。同じ色になる場合もある。</p>
+<p><strong>23枚目ではなく、弱い5枚を見る。</strong> 使う理由を説明できない弱い札が多い構築は、レアを引けなかったゲームで崩れやすい。通常の手札で2・3・4ターン目を順当に使えるかを点検する。</p>
+<p><strong>最後に勝ち筋を文章にする。</strong> 例えば「地上を交換し、飛行とジェイスの継続的な利益で勝つ」「魂木で一段重い脅威を先に出す」「横展開に強化を重ね、相手の長期戦が完成する前に押し切る」。これを言えないデッキは、役割が散っている可能性がある。</p>
+<h3>ボムが少ないプールの考え方</h3>
+<p>強いレアが少ないからといって、必ず負けるわけではない。ただし、相手より長く生き残れば自然に勝てるとも限らない。序盤の安定、飛行などの攻撃経路、軽量干渉、毎ターンのマナ効率を揃え、相手に十分な時間を渡さない構築も比較する。</p>
+<p>逆に、除去と継戦力は優秀なのに、レアがないという理由だけで無理な速攻に変える必要もない。<strong>自分のプールが持つ比較優位を勝ち筋にする</strong>。</p>
+<h2 id="section-14">最終チェック</h2>
+<ul>
+<li>2～3ターン目に盤面へ参加する札が十分にあるか。</li>
+<li>生物だけでなく、相手のPWや大きな勝ち札まで処理できるか。</li>
+<li>回復・墓地・非戦闘ダメージの報酬に、実際の支援札があるか。</li>
+<li>準備を使うマナと、次の生物を展開するマナの競合を考えたか。</li>
+<li>3色目のために、主色の序盤を壊していないか。</li>
+<li>ボムを引かないゲームでも勝つ道があるか。</li>
+</ul>
+<p><strong>私の今回の推奨は、色のTier表で構築を固定することではなく、白青・青黒を含む複数案を「序盤・回答・継戦・マナ」で比較すること。緑白・赤緑の強みを維持しつつ、黒の対処力と混成札の使い回しを過小評価しない。</strong></p>
+<h2 id="section-15">出典・確認対象</h2>
+<p>カードの能力は掲載されたルール・テキストから要約し、採用判断・構築例・確率計算は本書の分析として記載した。カードデータベースは個々のカード情報の照合に使用し、そのサイトの評価・コメントを戦略的な結論として転載していない。確認日：2026年9月20日。</p>
+<ol>
+<li class="source" id="source-1"><p><a href="https://www.izzetmtgnews.com/archives/147932" rel="noopener noreferrer" target="_blank">全カード公開の日本語報道：イゼ速</a></p>
+</li>
+<li class="source" id="source-2"><p><a href="https://magic.wizards.com/en/news/feature/reality-fracture-release-notes" rel="noopener noreferrer" target="_blank">Wizards公式：Reality Fracture Release Notes</a></p>
+</li>
+<li class="source" id="source-3"><p><a href="https://magic.wizards.com/en/news/feature/collecting-reality-fracture" rel="noopener noreferrer" target="_blank">Wizards公式：Collecting Reality Fracture</a></p>
+</li>
+<li class="source" id="source-4"><p><a href="https://magic.wizards.com/en/news/feature/reality-fracture-prerelease-guide" rel="noopener noreferrer" target="_blank">Wizards公式：Reality Fracture Prerelease Guide</a></p>
+</li>
+<li class="source" id="source-5"><p><a href="https://www.mtgsalvation.com/cards/reality-fracture/74484-extended-absence" rel="noopener noreferrer" target="_blank">Extended Absence：カード・テキスト</a></p>
+</li>
+<li class="source" id="source-6"><p><a href="https://magic.wizards.com/en/news/feature/reality-fracture-mechanics" rel="noopener noreferrer" target="_blank">Wizards公式：Reality Fracture Mechanics</a></p>
+</li>
+<li class="source" id="source-7"><p><a href="https://www.mtgsalvation.com/cards/reality-fracture/74164-fatehold-chronologist" rel="noopener noreferrer" target="_blank">Fatehold Chronologist：カード・テキスト</a></p>
+</li>
+<li class="source" id="source-8"><p><a href="https://www.mtgsalvation.com/cards/reality-fracture/74503-konstrari-improviser" rel="noopener noreferrer" target="_blank">Konstrari Improviser：カード・テキスト</a></p>
+</li>
+<li class="source" id="source-9"><p><a href="https://www.mtgsalvation.com/cards/reality-fracture/74548-graft-surgeon" rel="noopener noreferrer" target="_blank">Graft Surgeon：カード・テキスト</a></p>
+</li>
+<li class="source" id="source-10"><p><a href="https://www.mtgsalvation.com/cards/reality-fracture/74482-mindseeker-oculus" rel="noopener noreferrer" target="_blank">Mindseeker Oculus：カード・テキスト</a></p>
+</li>
+<li class="source" id="source-11"><p><a href="https://www.mtgsalvation.com/cards/reality-fracture/74496-heartstring-puller" rel="noopener noreferrer" target="_blank">Heartstring Puller：カード・テキスト</a></p>
+</li>
+<li class="source" id="source-12"><p><a href="https://www.mtgsalvation.com/spoilers/359-reality-fracture" rel="noopener noreferrer" target="_blank">Reality Fracture：公開カード・テキスト一覧</a></p>
+</li>
+<li class="source" id="source-13"><p><a href="https://www.mtgsalvation.com/cards/reality-fracture/74359-fulminous-forte" rel="noopener noreferrer" target="_blank">Fulminous Forte：カード・テキスト</a></p>
+</li>
+<li class="source" id="source-14"><p><a href="https://magic.wizards.com/ja/products/reality-fracture/card-image-gallery" rel="noopener noreferrer" target="_blank">Wizards公式：日本語カードギャラリー</a></p>
+</li>
+<li class="source" id="source-15"><p><a href="https://media.wizards.com/2026/downloads/FRA_Release_Notes_P5CShzFOEH/JP_MTGFRA_ReleaseNotes_20260622.pdf" rel="noopener noreferrer" target="_blank">Wizards公式：日本語リリースノート</a></p>
+</li>
+<li class="source" id="source-16"><p><a href="https://www.mtgsalvation.com/cards/reality-fracture/74316-draconic-visitor" rel="noopener noreferrer" target="_blank">Draconic Visitor：カード・テキスト</a></p>
+</li>
+<li class="source" id="source-17"><p><a href="https://www.mtgsalvation.com/cards/reality-fracture/74541-verdant-kraken" rel="noopener noreferrer" target="_blank">Verdant Kraken：カード・テキスト</a></p>
+</li>
+<li class="source" id="source-18"><p><a href="https://www.mtgsalvation.com/cards/reality-fracture/74302-refute-destiny" rel="noopener noreferrer" target="_blank">Refute Destiny：カード・テキスト</a></p>
+</li>
+<li class="source" id="source-19"><p><a href="https://www.mtgsalvation.com/cards/reality-fracture/74299-terminal-criticism" rel="noopener noreferrer" target="_blank">Terminal Criticism：カード・テキスト</a></p>
+</li>
+<li class="source" id="source-20"><p><a href="https://www.mtgsalvation.com/cards/reality-fracture/74174-emergency-phytomedic" rel="noopener noreferrer" target="_blank">Emergency Phytomedic：カード・テキスト</a></p>
+</li>
+<li class="source" id="source-21"><p><a href="https://www.mtgsalvation.com/cards/reality-fracture/74151-budding-insurgent" rel="noopener noreferrer" target="_blank">Budding Insurgent：カード・テキスト</a></p>
+</li>
+<li class="source" id="source-22"><p><a href="https://www.mtgsalvation.com/cards/reality-fracture/74358-sureshot-sower" rel="noopener noreferrer" target="_blank">Sureshot Sower：カード・テキスト</a></p>
+</li>
+</ol>
+<p>前回との比較対象：『MTG_Reality_Fracture_Limited_Reassessment_2026-09-13(1).html』。本書はそのファイルの上書きではなく、新規の戦略レビュー。</p>
+</main></div><footer class="footer">2026年9月20日作成。戦略評価・構築案・確率計算は独自分析。出典と前提は本文参照。</footer></body></html>
